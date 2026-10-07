@@ -4,23 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABR Content Automation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f5f7fb;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: auto;
+      padding: 32px 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 0 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #171f35;
+      color: #cbd5e1;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0 0 20px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      max-width: 680px;
+      margin: 0 auto;
+      color: #aab4c3;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      margin: 6px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .primary {
+      background: #ff2d55;
+      color: white;
+    }
+
+    .secondary {
+      background: #182238;
+      color: white;
+      border: 1px solid #2b3953;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #11182a;
+      border: 1px solid #1f2a41;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #9aa7ba;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid #1f2a41;
+      color: #7e8ba0;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .nav a {
+        margin: 0 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>ABR Content Automation</h1>
 
-  <p>
-    ABR Content Automation is a web-based tool used to authorize TikTok accounts
-    and manage content publishing workflows.
-  </p>
+  <div class="container">
 
-  <p>
-    This service is currently used for testing TikTok integration and content automation.
-  </p>
+    <div class="nav">
+      <div class="brand">ABR Content Automation</div>
+      <div>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
 
-  <p>
-    <a href="terms.html">Terms of Service</a>
-    |
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+    <section class="hero">
+      <div class="badge">ABR Company • Content Automation</div>
+
+      <h1>Automate TikTok content workflows with ABR</h1>
+
+      <p class="subtitle">
+        ABR Content Automation is a web-based automation service designed to
+        authorize TikTok accounts, manage content workflows, and support
+        automated publishing through official integrations.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="terms.html">Terms of Service</a>
+        <a class="button secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>TikTok Integration</h3>
+        <p>
+          Connect authorized TikTok accounts using secure OAuth authorization
+          and official TikTok APIs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Content Workflow</h3>
+        <p>
+          Support automated preparation and publishing workflows for ABR
+          content operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Secure Access</h3>
+        <p>
+          Access is limited to authorized accounts and integrations required
+          to operate the service.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 ABR Company. All rights reserved.
+    </div>
+
+  </div>
+
 </body>
 </html>
